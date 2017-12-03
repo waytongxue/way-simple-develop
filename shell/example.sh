@@ -167,13 +167,30 @@ do
 done
 
 
+# -------------------- 函数 -----------------------
+
+#函数返回值智能是0-255之间
+
+global_name=""
+
+function way(){
+
+	echo "my name is way, call in function"
+	global_name='waywayway'
+
+}
+
+# 函数调用不需要加括号
+way
+echo "$global_name"
+
 
 # -------------------- 重定向 -----------------------
 
 # 下面三种效果一样
 echo xxx > /dev/null 2>&1
 echo xxx >& /dev/null
-echo xxx &>& /dev/null
+echo xxx &> /dev/null
 
 
 
